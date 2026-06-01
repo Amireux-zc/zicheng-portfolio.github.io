@@ -3,19 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Zicheng</title>
+    <title>About Me | Zicheng</title>
     <style>
-        body { font-family: -apple-system, sans-serif; background-color: #f7f7f7; color: #111; padding: 4rem; }
-        a { text-decoration: none; color: #666; font-weight: bold; }
-        .project-card { background: white; padding: 2rem; margin: 2rem 0; border-radius: 8px; border: 1px solid #ddd; }
+        /* Global Styles matching your main layout */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #111111;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navigation Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 4rem;
+            background-color: #f7f7f7;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .dot {
+            width: 16px;
+            height: 16px;
+            background-color: #7bc4d4;
+            border-radius: 50%;
+        }
+        .logo-name {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .logo-name a {
+            text-decoration: none;
+            color: #111;
+        }
+        nav a {
+            text-decoration: none;
+            color: #111;
+            font-size: 0.9rem;
+            margin-left: 20px;
+        }
+
+        /* Layout Container */
+        .content-container {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        .back-link {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        .back-link:hover {
+            color: #111;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 1.5rem 0;
+            font-weight: 700;
+        }
+
+        /* Content Sections */
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 2.5rem 0 0.8rem 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.4rem;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Coursework Grid Layout */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+        .skill-tag {
+            background-color: #e0e0e0;
+            color: #111;
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
-    <a href="index.html">← Back to Home</a>
-    <h1>My Featured Projects</h1>
-    <div class="project-card">
-        <h2>Smart IoT Environmental Monitor</h2>
-        <p>Details about hardware integration, sensor logic, and gesture control configurations go here.</p>
-    </div>
-</body>
-</html>
+
+    <header>
+        <div class="logo-area">
+            <div class="dot"></div>
+            <div class="logo-name"><a href="index.html">Zicheng</a></div>
+        </div>
+        <nav>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
