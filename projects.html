@@ -6,16 +6,32 @@
     <title>Projects | Zicheng</title>
     <style>
         body { font-family: -apple-system, sans-serif; background-color: #f7f7f7; color: #111; padding: 4rem; }
-        a { text-decoration: none; color: #666; font-weight: bold; }
-        .project-card { background: white; padding: 2rem; margin: 2rem 0; border-radius: 8px; border: 1px solid #ddd; }
+        a { text-decoration: none; color: #111; }
+        .back-home { color: #666; font-weight: bold; display: inline-block; margin-bottom: 1.5rem; }
+        .project-card { background: white; padding: 2rem; margin: 2rem 0; border-radius: 8px; border: 1px solid #ddd; transition: transform 0.2s ease; }
+        .project-card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .project-card h2 { margin-top: 0; color: #111; }
+        .view-link { color: #bcd45c; font-weight: bold; font-size: 0.9rem; display: inline-block; margin-top: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
     </style>
 </head>
 <body>
-    <a href="index.html">← Back to Home</a>
+    <a href="index.html" class="back-home">← Back to Home</a>
     <h1>My Featured Projects</h1>
-    <div class="project-card">
-        <h2>Smart IoT Environmental Monitor</h2>
-        <p>Details about hardware integration, sensor logic, and gesture control configurations go here.</p>
-    </div>
+    
+    <a href="wheelchair.html">
+        <div class="project-card">
+            <h2>Wheelchair Extension System</h2>
+            <p>A mechanical modification assembly engineered to optimize the stability and adaptive functions of standard mobility platforms using custom structural component layouts.</p>
+            <span class="view-link">View Case Study →</span>
+        </div>
+    </a>
+
+    <a href="#">
+        <div class="project-card">
+            <h2>Smart IoT Environmental Monitor</h2>
+            <p>Details about hardware integration, sensor logic, and gesture control configurations go here.</p>
+            <span class="view-link">Coming Soon →</span>
+        </div>
+    </a>
 </body>
 </html>
