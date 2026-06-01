@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheelchair Extension System | Zicheng</title>
+    <style>
+        /* Global Styles matching your main layout */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #111111;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navigation Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 4rem;
+            background-color: #f7f7f7;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .dot {
+            width: 16px;
+            height: 16px;
+            background-color: #7bc4d4;
+            border-radius: 50%;
+        }
+        .logo-name {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .logo-name a {
+            text-decoration: none;
+            color: #111;
+        }
+        nav a {
+            text-decoration: none;
+            color: #111;
+            font-size: 0.9rem;
+            margin-left: 20px;
+        }
+
+        /* Project Layout Container */
+        .project-container {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        .back-link {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        .back-link:hover {
+            color: #111;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 0.5rem 0;
+            font-weight: 700;
+        }
+        .project-tag {
+            display: inline-block;
+            background-color: #bcd45c; /* Matches your green theme circle */
+            color: #111;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        /* Project Image Placeholder */
+        .project-image-box {
+            width: 100%;
+            background-color: #eaeaea;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 2.5rem;
+            border: 1px solid #ddd;
+        }
+        .project-image-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Content Sections */
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 2rem 0 0.8rem 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.4rem;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        ul {
+            padding-left: 1.5rem;
+            line-height: 1.7;
+            color: #333;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #e0e0e0;
+            padding: 2rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #444;
+            background-color: #f7f7f7;
+            margin-top: 6rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <div class="dot"></div>
+            <div class="logo-name"><a href="index.html">Zicheng</a></div>
+        </div>
+        <nav>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="project-container">
+        <a href="projects.html" class="back-link">← Back to Projects</a>
+        
+        <h1>Wheelchair Extension System</h1>
+        <div class="project-tag">Mechanical Design & Prototyping</div>
+
+        <div class="project-image-box">
+            <img src="wheelchair.jpg" alt="Wheelchair Extension System CAD Render / Prototyping Image" onerror="this.style.display='none';">
+        </div>
+
+        <h2>Project Overview</h2>
+        <p>
+            This engineering project focused on developing a structural modification system designed to enhance the functionality, stability, and versatility of standard wheelchairs. By implementing custom structural alterations, the system improves mechanical reliability and overall user accessibility.
+        </p>
+
+        <h2>Key Engineering Objectives</h2>
+        <ul>
+            <li><strong>CAD Design & Development:</strong> Utilizing 3D modeling tools (such as Autodesk Inventor) to draft the structural ribs, components, and interlocking mechanical features of the extension assembly.</li>
+            <li><strong>Structural Integrity Analysis:</strong> Optimizing component configurations, material thickness, and rib spacing to ensure the system can withstand realistic mechanical loading conditions.</li>
+            <li><strong>Prototyping & Verification:</strong> Evaluating spatial tolerances, cross-sectional stress resistance, and assembly mechanics using physical prototypes or detailed digital simulations.</li>
+        </ul>
+
+        <h2>Reflections & Outcomes</h2>
+        <p>
+            The final iteration successfully demonstrated how targeted mechanical enhancements can solve real-world mobility challenges. Developing this extension system highlighted the critical balance between physical structural reinforcement, strict weight restrictions, and precise assembly manufacturing parameters.
+        </p>
+    </div>
+
+    <footer>
+        <div><strong>Email:</strong> your.email@example.com</div>
+        <div>© 2026 Hosted via GitHub Pages</div>
+    </footer>
+
+</body>
+</html>
