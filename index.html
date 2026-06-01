@@ -3,67 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Zicheng | Portfolio</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #111111;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            box-sizing: border-box;
         }
+
+        /* Top Navigation Header */
         header {
-            background: #24292e;
-            color: #fff;
-            padding: 2rem;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 4rem;
+            background-color: #f7f7f7;
         }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
-        .project-card {
-            background: #fff;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-radius: 6px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        .dot {
+            width: 16px;
+            height: 16px;
+            background-color: #7bc4d4;
+            border-radius: 50%;
         }
-        h2 {
-            color: #24292e;
-            border-bottom: 2px solid #24292e;
-            padding-bottom: 0.5rem;
+        .logo-name {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .logo-title {
+            color: #666;
+            font-size: 0.9rem;
+            margin-left: 5px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #111;
+            font-size: 0.9rem;
+            margin-left: 20px;
+        }
+
+        /* Main Profile Layout Container */
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+            max-width: 1100px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+        }
+
+        /* Circular Profile Photo Frame */
+        .photo-frame {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            flex-shrink: 0;
+        }
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Profile Text Bio Area */
+        .bio-area {
+            max-width: 500px;
+        }
+        .bio-area h1 {
+            font-size: 3rem;
+            margin: 0 0 0.5rem 0;
+            font-weight: 700;
+        }
+        .bio-area h3 {
+            font-size: 1.1rem;
+            margin: 0 0 1rem 0;
+            font-weight: 600;
+        }
+        .bio-area p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        /* Circle Buttons Grid Layout */
+        .circle-menu {
+            display: flex;
+            gap: 15px;
+        }
+        .circle-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            text-decoration: none;
+            color: #111;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border: 1px solid rgba(0,0,0,0.15);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .circle-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Specific Button Colors to match image_0cf819.jpg */
+        .btn-green { background-color: #bcd45c; }
+        .btn-orange { background-color: #f2a61f; }
+        .btn-blue { background-color: #89ced6; }
+        .btn-grey { background-color: #cccccc; }
+
+        /* Bottom Footer Grid Styling */
+        footer {
+            border-top: 1px solid #e0e0e0;
+            padding: 2rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #444;
+            background-color: #f7f7f7;
+            margin-top: 4rem;
+        }
+        footer a {
+            color: #111;
         }
     </style>
 </head>
 <body>
 
+    <!-- Header Navigation Bar -->
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Tech Student & Engineering Enthusiast</p>
+        <div class="logo-area">
+            <div class="dot"></div>
+            <div class="logo-name">Zicheng</div>
+            <div class="logo-title">| Electronics & IoT Developer</div>
+        </div>
+        <nav>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <div class="container">
-        <h2>About Me</h2>
-        <p>Hi! I build things. I'm interested in programming, electronics, and developing projects that solve real-world problems.</p>
-
-        <h2>Featured Projects</h2>
+    <!-- Main Content Area matching layout of image_0cf819.jpg -->
+    <div class="profile-container">
         
-        <div class="project-card">
-            <h3>Project 1: IoT Environmental Monitor</h3>
-            <p>A smart monitoring system built to track real-time indoor air quality, using gesture controls to interact with the hardware displays.</p>
+        <!-- Profile Picture Placeholder -->
+        <div class="photo-frame">
+            <!-- Replace 'your-profile-pic.jpg' with your actual image file name later -->
+            <img src="your-profile-pic.jpg" alt="Zicheng's Portrait">
         </div>
 
-        <div class="project-card">
-            <h3>Project 2: Data Analysis & Statistics</h3>
-            <p>Using tools like Excel and regression models to break down retail and business data trends to optimize operational efficiency.</p>
+        <!-- Biography and Navigation Circles -->
+        <div class="bio-area">
+            <h1>Zicheng</h1>
+            <h3>A Bit About Me</h3>
+            <p>
+                I am a technical student focused on electronics, robotics, and embedded systems. 
+                I enjoy building smart IoT solutions, analyzing backend systems, and engineering projects 
+                from the ground up to link real-world hardware with modern software architectures.
+            </p>
+
+            <!-- Interactive Circle Buttons that link to new pages -->
+            <div class="circle-menu">
+                <a href="projects.html" class="circle-btn btn-green">Projects</a>
+                <a href="about.html" class="circle-btn btn-orange">About</a>
+                <a href="https://github.com" target="_blank" class="circle-btn btn-blue">GitHub</a>
+                <a href="contact.html" class="circle-btn btn-grey">Contact</a>
+            </div>
         </div>
 
-        <h2>Contact</h2>
-        <p>Feel free to reach out via GitHub or find me on LinkedIn!</p>
     </div>
+
+    <!-- Layout Footer -->
+    <footer>
+        <div>
+            <strong>Email</strong><br>
+            your.email@example.com
+        </div>
+        <div>
+            <strong>GitHub Profile</strong><br>
+            <a href="https://github.com" target="_blank">github.com/your-username</a>
+        </div>
+        <div>
+            <strong>Current Projects</strong><br>
+            Smart Air Monitoring & IoT Systems
+        </div>
+        <div>
+            © 2026 Hosted via GitHub Pages
+        </div>
+    </footer>
 
 </body>
 </html>
