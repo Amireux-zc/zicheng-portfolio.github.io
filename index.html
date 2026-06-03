@@ -57,7 +57,7 @@
             justify-content: center;
             gap: 4rem;
             max-width: 1100px;
-            margin: 6rem auto;
+            margin: 8rem auto; /* Slightly increased margin to balance the page vertically without a footer */
             padding: 0 2rem;
         }
 
@@ -125,26 +125,10 @@
         .btn-green { background-color: #bcd45c; }
         .btn-orange { background-color: #f2a61f; }
         .btn-grey { background-color: #cccccc; }
-
-        /* Bottom Footer Grid Styling */
-        footer {
-            border-top: 1px solid #e0e0e0;
-            padding: 2rem 4rem;
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.85rem;
-            color: #444;
-            background-color: #f7f7f7;
-            margin-top: 4rem;
-        }
-        footer a {
-            color: #111;
-        }
     </style>
 </head>
 <body>
 
-    <!-- Header Navigation Bar -->
     <header>
         <div class="logo-area">
             <div class="dot"></div>
@@ -153,57 +137,4 @@
         </div>
         <nav>
             <a href="projects.html">Projects</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <!-- Main Content Area -->
-    <div class="profile-container">
-        
-        <!-- Profile Picture Frame linking your portrait image -->
-        <div class="photo-frame">
-            <img src="image_0cf819.jpg" alt="Zicheng's Portrait">
-        </div>
-
-        <!-- Biography and Navigation Circles -->
-        <div class="bio-area">
-            <h1>Zicheng</h1>
-            <h3>A Bit About Me</h3>
-            <p>
-                I am an engineering student focused on electronics, robotics, and embedded systems. 
-                I enjoy developing smart IoT integrations, debugging software architectures, and using 
-                data analytics to explore technical trends and build functional systems.
-            </p>
-
-            <!-- Interactive Circle Buttons (GitHub circle removed) -->
-            <div class="circle-menu">
-                <a href="projects.html" class="circle-btn btn-green">Projects</a>
-                <a href="about.html" class="circle-btn btn-orange">About</a>
-                <a href="contact.html" class="circle-btn btn-grey">Contact</a>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Layout Footer -->
-    <footer>
-        <div>
-            <strong>Email</strong><br>
-            your.email@example.com
-        </div>
-        <div>
-            <strong>GitHub Profile</strong><br>
-            <a href="https://github.com" target="_blank">github.com/your-username</a>
-        </div>
-        <div>
-            <strong>Current Work</strong><br>
-            Smart IoT Monitoring & Engineering Projects
-        </div>
-        <div>
-            © 2026 Hosted via GitHub Pages
-        </div>
-    </footer>
-
-</body>
-</html>
+            <a
